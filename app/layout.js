@@ -5,7 +5,7 @@ import MenuContextProvider from '@/context/MenuContext';
 export const metadata = {
   title: 'Nextjs Tailwind SandBox',
   description:
-    'This is a tutorial project from DevEmpower YouTube channel: https://www.youtube.com/@DevEmpower',
+    'This is a tutorial developed by MAB. Thanks DevEmpower!',
 };
 
 export default function RootLayout({ children }) {
