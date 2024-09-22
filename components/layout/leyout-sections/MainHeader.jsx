@@ -29,7 +29,7 @@ const MainHeader = () => {
 
   return (
     <div className='bg-white dark:bg-slate-800 dark:text-white flex justify-between items-center px-4 h-12 mb-4'>
-      <div>DevEmpower</div>
+      <div><h1 className='text-2xl font-bold'>Brand</h1></div>
       <div className='flex justify-center items-center gap-3'>
         {theme === 'light' ? (
           <FaMoon
@@ -50,7 +50,13 @@ const MainHeader = () => {
           <FaBars className='cursor-pointer' />
         </div>
         <div>
-          <UserAreaSelectBox />
+          
+          <div className="flex items-center">
+            <div className="w-8 h-8 rounded-full bg-gray-300 mr-2 flex items-center justify-center">
+              <span className="text-sm font-bold">U</span>
+            </div>
+            <UserAreaSelectBox />
+          </div>  
         </div>
       </div>
     </div>

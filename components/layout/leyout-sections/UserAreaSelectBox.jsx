@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const actions = [
-   { id: 1, label: "User Dashboard", route: "/users/dashboard" },
+   { id: 1, label: "Dashboard", route: "/users/dashboard" },
    { id: 2, label: "Transactions", route: "/users/transactions" },
    { id: 3, label: "Orders", route: "/users/orders" },
    { id: 4, label: "Friends", route: "/users/friends" },

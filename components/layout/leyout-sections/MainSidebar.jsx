@@ -7,6 +7,9 @@ import { GrProjects } from 'react-icons/gr';
 import { FaAngleRight, FaCheck, FaCheckDouble } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
 import { SiHelpscout, SiSinglestore } from 'react-icons/si';
+import { FaUsers } from "react-icons/fa";
+import { GrUserAdmin } from "react-icons/gr";
+import { FaSearchLocation } from "react-icons/fa";
 
 const MainSidebar = () => {
   const { open, toggle } = useContext(MenuContext);
@@ -36,6 +39,27 @@ const MainSidebar = () => {
           <GrProjects className='mr-2' />
           <h3 className='flex-1'>Projects</h3>
           <FaAngleRight />
+        </li>
+        <li className='flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2'>
+          <GrUserAdmin className='mr-2' />
+          <Link href='/typeusers' onClick={closeSeideBarHandler}>
+            Type of users
+          </Link>
+        </li>
+        <li className='flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2'>
+          <FaUsers className='mr-2' />
+          <Link href='/users' onClick={closeSeideBarHandler}>
+            Users
+          </Link>
+          </li>
+          <li className='flex justify-start items-center hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2'>
+          <FaSearchLocation className='mr-2' />
+          <Link href='/locations' onClick={closeSeideBarHandler}>
+            Locations
+          </Link>
+
+
+
         </li>
         <li className='flex flex-col justify-start items-start hover:bg-blue-200 hover:text-blue-800 rounded-xl p-2'>
           <div className='w-full flex flex-row justify-start items-center'>
