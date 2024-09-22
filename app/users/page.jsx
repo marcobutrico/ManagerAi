@@ -38,7 +38,7 @@ export default function Usuarios() {
       .ilike('nome', `%${search}%`) // Busca por nome
       .order('login', { ascending: true });
 
-    if (error) console.error('Erro ao buscar usuários:', error);
+    if (error) console.error('Error to fetch users:', error);
     else setUsuarios(data);
     setLoading(false);
   };
@@ -48,7 +48,7 @@ export default function Usuarios() {
     const { data, error } = await supabase.from('users').insert([novoUsuario]);
 
     if (error) {
-      console.error('Erro ao adicionar usuário:', error);
+      console.error('Error loading users:', error);
     } else {
       setIsModalOpen(false); // Fecha o modal após inclusão
       fetchUsuarios(); // Atualiza a lista de usuários
